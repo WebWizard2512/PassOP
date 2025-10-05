@@ -22,7 +22,7 @@ const Manager = () => {
         try {
             setLoading(true);
             const response = await fetch(`${API_URL}/passwords`);
-            
+
             if (!response.ok) {
                 throw new Error('Failed to fetch passwords');
             }
@@ -217,7 +217,7 @@ const Manager = () => {
                     <div className="space-y-4">
                         <div>
                             <label className="text-green-400 font-mono text-xs block mb-1">
-                                WEBSITE_URL:
+                                WEBSITE URL:
                             </label>
                             <input 
                                 value={form.site} 
